@@ -1,7 +1,9 @@
 from setuptools import setup , find_packages
 from typing import List
 
-PROJECT_NAME ="Airfoil prediction"
+
+
+PROJECT_NAME ="Heart-Failure-detector"
 
 VERSION ="2.0"
 
@@ -36,8 +38,3 @@ description=DESCRIPTION ,
 packages=find_packages(), 
 install_requires=get_requirements_list()
 )
-
-
-
-
-

@@ -3,9 +3,9 @@ from typing import List
 
 
 
-PROJECT_NAME ="Heart-Failure-detector"
+PROJECT_NAME ="Airfoil_prediction"
 
-VERSION ="2.0"
+VERSION ="2.0.1"
 
 AUTHOR="Akhil pratap singh"
 DESCRIPTION ="This is second project"

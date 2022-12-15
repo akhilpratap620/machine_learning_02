@@ -1,7 +1,17 @@
-column:
+columns:
+  Frequency: int64
   Angle of attack: float64
   Chord length: float64
   Free-stream velocity: float64
-  Frequency: int64
   Scaled Sound Pressure Level: float64
   Section side displacement thickness: float64
+ 
+a_columns:
+ -Frequency 
+ -Angle of attack
+ -Chord length
+ -Free-stream velocity
+ -Section side displacement thickness
+
+target_column:
+ -Scaled Sound Pressure Level

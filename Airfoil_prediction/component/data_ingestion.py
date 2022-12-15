@@ -119,11 +119,17 @@ class DataIngestion:
                 logging.info(f"spliting data into testing dataset[{test_file_path}]")
                 strat_train_set.to_csv(test_file_path ,index = False)   
 
-            DataIngestionArtifact(
+            data_ingestion_artifact=DataIngestionArtifact(
+
+
                 train_file_path=train_file_path ,
                 test_file_path=test_file_path ,
                 is_ingested=True ,
                 message ="Data_Ingestion_completed" ) 
+
+            return data_ingestion_artifact
+            logging.info(f"data ingestion [{data_ingestion_artifact}]")    
+                
 
         except Exception  as e:
             raise FailureException(e, sys) from e         

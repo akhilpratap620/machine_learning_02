@@ -110,7 +110,7 @@ class DataTransformation:
             transformed_test_dir=self.data_transformation_config.transformed_test_dir
 
             train_file_name=os.path.basename(train_file_path).replace(".csv" , ".npz")
-            test_file_name=os.path.basename(test_file_path)
+            test_file_name=os.path.basename(test_file_path).replace(".csv" , ".npz")
 
             logging.info("creating transformed train file path and test file path")
 

@@ -7,12 +7,12 @@ import os , sys
 def main():
     try:
         config_path = os.path.join("config","config.yaml")
-        pipeline = Pipeline(Configuration(config_file_path=config_path))
-        pipeline.run_pipeline()
+        # pipeline = Pipeline(Configuration(config_file_path=config_path))
+        # pipeline.run_pipeline()
         #pipeline.start()
         # logging.info("main function execution completed.")
-        # data_transformed_config = Configuration().get_data_transformation_config()
-        # print(data_transformed_config)
+        model_trainer_config = Configuration().get_model_trainer_config()
+        print(model_trainer_config)
         # schema_file_path=r"C:\Users\somit\Downloads\project_ineuron\machine_learning_02\notebook\schema_01.yaml"
         # file_path=r"C:\Users\somit\Downloads\project_ineuron\machine_learning_02\Airfoil_prediction\artifact\data_ingestion\2022-11-22-08-17-45\ingested_data\train\airfoil_self_noise.csv"
 
